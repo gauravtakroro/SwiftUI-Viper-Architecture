@@ -94,6 +94,11 @@
 		93BF3B1C2B25DC32002520D4 /* SwiftUI-Viper-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				93BF3B472B25F23C002520D4 /* DI */,
+				93BF3B482B25F24A002520D4 /* Data */,
+				93BF3B492B25F255002520D4 /* UI */,
+				93BF3B4A2B25F25D002520D4 /* Extension */,
+				93BF3B4B2B25F285002520D4 /* Common */,
 				93BF3B1D2B25DC32002520D4 /* SwiftUI_Viper_ArchitectureApp.swift */,
 				93BF3B1F2B25DC32002520D4 /* ContentView.swift */,
 				93BF3B212B25DC34002520D4 /* Assets.xcassets */,
@@ -125,6 +130,41 @@
 				93BF3B3A2B25DC35002520D4 /* SwiftUI_Viper_ArchitectureUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-Viper-ArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		93BF3B472B25F23C002520D4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		93BF3B482B25F24A002520D4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		93BF3B492B25F255002520D4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		93BF3B4A2B25F25D002520D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		93BF3B4B2B25F285002520D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
