@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUI_Viper_ArchitectureApp: App {
+    
+    init() {
+         Resolver.shared.setDependencyContainer(ApiContainer.shared.buid())
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

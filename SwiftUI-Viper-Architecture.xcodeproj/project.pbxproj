@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939355772B2625BB007B7232 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 939355762B2625BB007B7232 /* Swinject */; };
+		9393557B2B2625F9007B7232 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393557A2B2625F9007B7232 /* DependencyManager.swift */; };
+		9393557D2B262601007B7232 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393557C2B262601007B7232 /* Resolver.swift */; };
+		939355802B26266E007B7232 /* ApiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393557F2B26266E007B7232 /* ApiContainer.swift */; };
 		93BF3B1E2B25DC32002520D4 /* SwiftUI_Viper_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3B1D2B25DC32002520D4 /* SwiftUI_Viper_ArchitectureApp.swift */; };
 		93BF3B202B25DC32002520D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3B1F2B25DC32002520D4 /* ContentView.swift */; };
 		93BF3B222B25DC34002520D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BF3B212B25DC34002520D4 /* Assets.xcassets */; };
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9393557A2B2625F9007B7232 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		9393557C2B262601007B7232 /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		9393557F2B26266E007B7232 /* ApiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContainer.swift; sourceTree = "<group>"; };
 		93BF3B1A2B25DC32002520D4 /* SwiftUI-Viper-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Viper-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BF3B1D2B25DC32002520D4 /* SwiftUI_Viper_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Viper_ArchitectureApp.swift; sourceTree = "<group>"; };
 		93BF3B1F2B25DC32002520D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939355772B2625BB007B7232 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		939355752B2625BB007B7232 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9393557E2B262634007B7232 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				9393557F2B26266E007B7232 /* ApiContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		93BF3B112B25DC32002520D4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +101,7 @@
 				93BF3B2D2B25DC35002520D4 /* SwiftUI-Viper-ArchitectureTests */,
 				93BF3B372B25DC35002520D4 /* SwiftUI-Viper-ArchitectureUITests */,
 				93BF3B1B2B25DC32002520D4 /* Products */,
+				939355752B2625BB007B7232 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +159,9 @@
 		93BF3B472B25F23C002520D4 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				9393557E2B262634007B7232 /* Container */,
+				9393557C2B262601007B7232 /* Resolver.swift */,
+				9393557A2B2625F9007B7232 /* DependencyManager.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -183,6 +210,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Viper-Architecture";
+			packageProductDependencies = (
+				939355762B2625BB007B7232 /* Swinject */,
+			);
 			productName = "SwiftUI-Viper-Architecture";
 			productReference = 93BF3B1A2B25DC32002520D4 /* SwiftUI-Viper-Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -300,8 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939355802B26266E007B7232 /* ApiContainer.swift in Sources */,
 				93BF3B202B25DC32002520D4 /* ContentView.swift in Sources */,
+				9393557B2B2625F9007B7232 /* DependencyManager.swift in Sources */,
 				93BF3B1E2B25DC32002520D4 /* SwiftUI_Viper_ArchitectureApp.swift in Sources */,
+				9393557D2B262601007B7232 /* Resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +670,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		939355762B2625BB007B7232 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93BF3B4D2B2607CB002520D4 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93BF3B122B25DC32002520D4 /* Project object */;
 }
