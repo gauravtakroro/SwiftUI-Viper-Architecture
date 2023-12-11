@@ -16,7 +16,7 @@ struct SwiftUI_Viper_ArchitectureApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
