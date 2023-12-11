@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("swiftui_icon1").resizable()
-                .frame(width: 60, height: 60)
-            Text("SwiftUI with viper Architecture ContentView")
-        }
-        .padding()
+        ProductsListingRouter.composeView()
     }
 }
 

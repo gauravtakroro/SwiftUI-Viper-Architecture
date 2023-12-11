@@ -9,13 +9,13 @@ import Foundation
 
 struct Product : Identifiable, Decodable {
     let id : Int?
-    let title : String?
-    let price : Int?
-    let description : String?
-    let images : [String]?
-    let creationAt : String?
-    let updatedAt : String?
-    let category : Category?
+    var title : String = ""
+    var price : Int = 0
+    var description : String = ""
+    var images : [String] = []
+    var creationAt : String = ""
+    var updatedAt : String = ""
+    var category : Category?
 
     enum CodingKeys: String, CodingKey {
 
