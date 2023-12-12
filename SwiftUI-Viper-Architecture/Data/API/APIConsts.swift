@@ -1,5 +1,5 @@
 //
-//  APIConsts.swift
+//  ApiConsts.swift
 //  SwiftUI-Viper-Architecture
 //
 //  Created by Gaurav Tak on 10/12/23.
@@ -12,9 +12,9 @@ enum Api : String {
 }
 
 enum ApiVersion : String {
-    case v3 = "v1"
+    case v1 = "v1"
 }
 
 struct Services {
-    static let products = "\(Api.BASE_URL.rawValue)/\(ApiVersion.v3.rawValue)/products"
+    static let products = "\(Api.BASE_URL.rawValue)/\(ApiVersion.v1.rawValue)/products"
 }
