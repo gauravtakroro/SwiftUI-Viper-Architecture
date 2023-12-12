@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9374354B2B27FFB1001FE2FF /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374354A2B27FFB1001FE2FF /* UIImage+Extensions.swift */; };
+		939311652B27954800E9E516 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939311642B27954800E9E516 /* View+Extensions.swift */; };
 		939355772B2625BB007B7232 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 939355762B2625BB007B7232 /* Swinject */; };
 		9393557B2B2625F9007B7232 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393557A2B2625F9007B7232 /* DependencyManager.swift */; };
 		9393557D2B262601007B7232 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393557C2B262601007B7232 /* Resolver.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9374354A2B27FFB1001FE2FF /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		939311642B27954800E9E516 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		9393557A2B2625F9007B7232 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		9393557C2B262601007B7232 /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		9393557F2B26266E007B7232 /* ApiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContainer.swift; sourceTree = "<group>"; };
@@ -319,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				939355B42B26BDD8007B7232 /* CommonExtension.swift */,
+				939311642B27954800E9E516 /* View+Extensions.swift */,
+				9374354A2B27FFB1001FE2FF /* UIImage+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				93BF3B202B25DC32002520D4 /* ContentView.swift in Sources */,
 				9393557B2B2625F9007B7232 /* DependencyManager.swift in Sources */,
 				939355A42B26B590007B7232 /* ProductsListingDependencies.swift in Sources */,
+				939311652B27954800E9E516 /* View+Extensions.swift in Sources */,
 				9393558C2B262A96007B7232 /* Category.swift in Sources */,
 				939355A92B26B8ED007B7232 /* ProductsListingContracts.swift in Sources */,
 				9393559C2B26B511007B7232 /* ProductsListingView.swift in Sources */,
@@ -489,6 +496,7 @@
 				939355932B262D1E007B7232 /* ProductsStoreService.swift in Sources */,
 				939355992B26AB44007B7232 /* SplashView.swift in Sources */,
 				939355A22B26B566007B7232 /* ProductsListingRouter.swift in Sources */,
+				9374354B2B27FFB1001FE2FF /* UIImage+Extensions.swift in Sources */,
 				939355B52B26BDD8007B7232 /* CommonExtension.swift in Sources */,
 				939355B12B26B9B0007B7232 /* WebView.swift in Sources */,
 			);
